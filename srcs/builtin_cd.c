@@ -70,9 +70,7 @@ int	builtin_cd(char **cmds, t_container *con)
 {
 	char	*path;
 	char	*tmp;
-	int		is_error;
 
-	is_error = 0;
 	path = cmds[1];
 	tmp = getcwd(NULL, MAXSIZE);
 	if (tmp == NULL)

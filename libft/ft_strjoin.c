@@ -15,10 +15,8 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	total_len;
-	size_t	index;
 	char	*toss;
 
-	index = 0;
 	if (s1 == 0)
 		total_len = ft_strlen(s2);
 	else

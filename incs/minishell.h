@@ -31,6 +31,7 @@
 # include <term.h>
 # include <fcntl.h>
 # include <errno.h>
+# include <stdint.h>
 
 # define MAXSIZE 1024
 # define PATH "PATH="

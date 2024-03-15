@@ -23,9 +23,6 @@ void	open_pipe(t_info *info)
 
 void	close_pipe(t_info *info)
 {
-	int	i;
-
-	i = -1;
 	if (info->idx == 0)
 		close(info->pipe_fds[info->cur][0]);
 	else if (info->idx == info->cnt - 1)

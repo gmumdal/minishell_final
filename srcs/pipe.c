@@ -32,13 +32,11 @@ void	init_info(t_info *info, t_container *con)
 
 int	wait_children(t_info *info, t_container *con)
 {
-	int	i;
 	int	wstatus;
 	int	result;
 	int	error_num;
 
 	error_num = errno;
-	i = 0;
 	while (1)
 	{
 		result = wait(&wstatus);

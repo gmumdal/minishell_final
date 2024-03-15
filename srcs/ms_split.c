@@ -16,7 +16,6 @@ char	**ms_split(char *cmd)
 {
 	char	**toss;
 	int		count;
-	int		index;
 	int		wordlen;
 
 	wordlen = ft_strlen(cmd);
@@ -24,7 +23,6 @@ char	**ms_split(char *cmd)
 	count = 0;
 	while (count < wordlen && *cmd != 0)
 	{
-		index = 0;
 		toss[count] = (char *)ft_calloc(wordlen + 1, sizeof(char));
 		if (ms_split_input(toss[count], &cmd, "|<>&;\\") == -1)
 		{
